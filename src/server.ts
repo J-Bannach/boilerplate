@@ -1,6 +1,6 @@
 import express from 'express';
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3020 } = process.env;
 const app = express();
 
 // Serve storybook production bundle
@@ -10,5 +10,5 @@ app.use('/storybook', express.static('dist/storybook'));
 app.use(express.static('dist/app'));
 
 app.listen(PORT, () => {
-  console.log(`photoplay app listening at http://localhost:${PORT}`);
+  console.log(`Boilerplate listening at http://localhost:${PORT}`);
 });
